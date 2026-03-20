@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './button.css';
+import { t } from '@lingui/core/macro';
 
 export interface ButtonProps {
   /** Is this the principal call to action on the page? */
@@ -31,7 +32,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {label} {t({ id: 'button.label', message: 'Button' })}
     </button>
   );
 };

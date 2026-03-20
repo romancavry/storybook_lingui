@@ -1,3 +1,5 @@
+# Example of `storybook 10x`, `vite 8x` and `lingui 5x`
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

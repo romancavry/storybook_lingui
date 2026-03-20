@@ -1,4 +1,8 @@
 import type { Preview } from '@storybook/react-vite'
+import { withLingui } from './withLingui';
+
+import { messages as messagesEn } from '../src/locales/en/messages';
+import { messages as messagesRu } from '../src/locales/ru/messages';
 
 const preview: Preview = {
   parameters: {
@@ -16,6 +20,14 @@ const preview: Preview = {
       test: 'todo'
     }
   },
+  decorators: [
+    withLingui({
+      messages: {
+        en: messagesEn,
+        ru: messagesRu,
+      },
+    }),
+  ],
 };
 
 export default preview;
